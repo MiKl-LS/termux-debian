@@ -57,6 +57,7 @@ function install {
 	fi
 	echo "Writing launch script..."
 	cat > ${script} <<- EOF
+		#!/data/data/com.termux/files/usr/bin/bash
 		cd \$(dirname \$0)
 		## unset LD_PRELOAD in case termux-exec is installed
 		unset LD_PRELOAD
