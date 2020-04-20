@@ -13,6 +13,11 @@ All you really need to do is to download the script and execute it (using `curl`
 curl -sLO https://raw.githubusercontent.com/mikl-ls/termux-debian/master/debian.sh
 bash debian.sh (optional flags: -v $VERSION to specify the version. -u to uninstall)
 ```
+
+$VERSION as in `stable`, `testing`, `unstable`, `jessie`, etc.
+
+Note: EOL (end of life) versions are not supported due to them being in a seperate repo
+
 The script does everything else like installing dependencies, etc. Just in case, here's how to install the dependencies:
 ```
 pkg install -y proot wget
