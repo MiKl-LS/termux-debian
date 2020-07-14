@@ -16,11 +16,11 @@ function install {
 	}
 	function check_deps {
 		echo -n "Checking dependencies... "
-		for dep in proot wget
+		for dep in proot wget # dependencies
 			do
 				function fetch_deps {
 					echo -e "\nInstalling ${dep}..."
-					pkg install -y ${dep} || { echo "An error occured while trying to download dependencies"; exit; }
+					pkg install -y ${dep} || { echo "An error occured while trying to download ${dep}"; exit; }
 					deps=1
 				}
 				command -v $dep 2&>/dev/null || fetch_deps
