@@ -1,4 +1,6 @@
 
+## ARCHIVED: Termux's [`proot-distro`](https://github.com/termux/proot-distro) is a better alternative that this hunk of junk
+
 A bash (.sh) script to install Debian on a Termux enviroment
 
 ![Debian "Banner"](https://wiki.debian.org/FrontPage?action=AttachFile&do=get&target=10-buster-wiki-banner-02.png)
